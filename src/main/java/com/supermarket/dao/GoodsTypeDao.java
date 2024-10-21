@@ -1,0 +1,28 @@
+package com.supermarket.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import com.supermarket.entity.GoodsType;
+
+public interface GoodsTypeDao {
+
+	public List<GoodsType> findByGoodsType(Integer parentId);
+
+	public GoodsType findByStateId(Integer id);
+
+	public GoodsType findByPid(Integer id);
+	
+	public List<GoodsType> findAll(Map<String,Object> map);
+	
+	public Integer delete(Integer id);
+	
+	public GoodsType isEchoes(String name);
+	
+	public Integer update(GoodsType goodsType);
+	
+	public GoodsType findById(Integer id);
+	
+	public Integer add(GoodsType goodsType);
+	
+}
